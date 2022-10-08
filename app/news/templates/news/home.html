@@ -13,27 +13,54 @@
 </head>
 
 <body>
-    <h1><a href="{% url 'news' %}">Сервис новостей</a></h1>
+    <a href="{% url 'news' %}">
+        <h1>Сервис новостей</h1>
+    </a>
     <div class="main">
         <div class="roles btn-group-vertical" role="group" aria-label="Vertical button group">
             {% for slug, name in roles.items %}
-            <button type="button" class="btn btn-outline-dark"><a href="{% url 'news_by_role' slug %}">{{ name }}</a></button>
+            <a href="{% url 'news_by_role' slug %}"><button type="button" class="role btn btn-outline-dark">{{ name }}</button></a>
             {% endfor %}
         </div>
-        <div class="card mb-3">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="news">
+            <h3>Все новости</h3>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="insite-digest">
+            <h4>Инсайт</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <h4>Тренд</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
         </div>
     </div>

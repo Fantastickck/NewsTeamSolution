@@ -12,8 +12,11 @@ def get_news(request) -> HttpResponse:
 
 
 def get_news_by_role(request, role: str) -> HttpResponse:
-    context = {
-        'roles': ROLES,
-        'current_role': ROLES[role]
-    }
-    return render(request=request, template_name='news/news.html', context=context)
+    if role in ROLES:
+        context = {
+            'roles': ROLES,
+            'current_role': ROLES[role]
+        }
+        return render(request=request, template_name='news/news.html', context=context)
+    else:
+        return render(request=request, template_name='news/error.html', context={'role': role})

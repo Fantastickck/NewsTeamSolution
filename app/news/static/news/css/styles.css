@@ -2,6 +2,11 @@ body {
     padding: 0 30px 0 10px;
 }
 
+h1 {
+    margin: 10px 0 20px 30px;
+    color: black;
+}
+
 .roles {
     display: block;
     width: 150px;
@@ -11,8 +16,32 @@ body {
     float: left;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.role:hover a {
+    color: white;
+}
+
+.btn-dark {
+    color: white;
+}
+
+.btn {
+    width: 100%;
+}
+
 .news {
     margin-right: 40px;
     display: block;
-    width: 300px;
+    height: 100%;
+    width: 750px;
+    float: left;
+}
+
+.insite-digest {
+    width: 400px;   
+    float: left;
 }
