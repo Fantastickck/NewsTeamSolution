@@ -108,31 +108,6 @@ FILE_BY_ROLE = {
     'accountant': 'klerk.csv'
 }
 
-TREND_BY_ROLE = {
-    'director': {
-        'title': 'title of trend',
-        'description': 'director',
-        'date_time': '18-01-2022'
-    },
-    'accountant': {
-        'title': 'title of trend',
-        'description': 'accountant',
-        'date_time': '18-01-2022'
-    }
-}
-
-INSITE_BY_ROLE = {
-    'director': {
-        'title': 'title of insite',
-        'description': 'direction',
-        'date_time': '18-01-2022'
-    },
-    'accountant': {
-        'title': 'title of insite',
-        'description': 'accountant',
-        'date_time': '18-01-2022'
-    }
-}
 
 # DEFAULT_TREND = {
 #     'title': 'Title of default trend',
@@ -140,5 +115,5 @@ INSITE_BY_ROLE = {
 #     'date_time': "11.01.2022"
 # }
 
-COUNT_INPUT = 50
+COUNT_INPUT = 20
 COUNT_OUTPUT = 3

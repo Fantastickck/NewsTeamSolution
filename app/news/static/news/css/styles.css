@@ -21,8 +21,13 @@ a {
     text-decoration: none;
 }
 
-.role:hover a {
+a:hover {
+    background-color: grey;
+}
+
+.role:hover {
     color: white;
+    background-color: gray;
 }
 
 .btn-dark {

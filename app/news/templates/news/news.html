@@ -26,11 +26,11 @@
             {% endfor %}
         </div>
         <div class="news">
-            <h3>Дайджест по роли "{{ current_role }}"</h3>
+            <h3>Дайджест</h3>
             {% for news in news_list %}
             <div class="card mb-3">
                 <div class="card-body">
-                    <a href="{{ news.url }}"><h5 class="card-title">{{ news.title }}</h5></a>
+                    <a href="{{ news.url }}" target="_blank"><h5 class="card-title">{{ news.title }}</h5></a>
                     <p class="card-text">{{ news.description }}</p>
                     <p class="card-text"><small class="text-muted">{{ news.date_time }}</small></p>
                 </div>
@@ -38,20 +38,20 @@
             {% endfor %}
         </div>
         <div class="insite-digest">
-            <h4>Инсайт для роли "{{ current_role }}"</h4>
+            <h4>Тренды</h4>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <ul>
+                        {% for trend in trend_list %}
+                        <h5 class="card-title"><li>{{ trend.title }}</li></h5>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <h4>Инсайт</h4>
             <div class="card mb-3">
                 <div class="card-body">
                     <h5 class="card-title">{{ insite.title }}</h5>
-                    <p class="card-text">{{ insite.description }}</p>
-                    <p class="card-text"><small class="text-muted">{{ insite.date_times }}</small></p>
-                </div>
-            </div>
-            <h4>Тренд для роли "{{ current_role }}"</h4>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">{{ trend.title }}</h5>
-                    <p class="card-text">{{ trend.description }}</p>
-                    <p class="card-text"><small class="text-muted">{{ trend.date_time }}</small></p>
                 </div>
             </div>
         </div>
