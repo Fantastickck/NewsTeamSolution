@@ -3,11 +3,12 @@ from django.http import HttpResponse
 
 from config import settings
 from news import default_data
-from services import get_rel_news
 
 
 def get_news(request) -> HttpResponse:
+    news_list = default_data.DEFAULT_LIST_NEWS
     context = {
+        'news_list': news_list,
         'roles': settings.ROLES
     }
     return render(request=request, template_name='news/home.html', context=context)

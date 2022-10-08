@@ -23,7 +23,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'news.apps.NewsConfig'
+    'news.apps.NewsConfig',
+    'api.apps.ApiConfig',
+
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -107,13 +110,6 @@ FILE_BY_ROLE = {
     'director': 'bell.csv',
     'accountant': 'klerk.csv'
 }
-
-
-# DEFAULT_TREND = {
-#     'title': 'Title of default trend',
-#     'description': 'desc',
-#     'date_time': "11.01.2022"
-# }
 
 COUNT_INPUT = 20
 COUNT_OUTPUT = 3
