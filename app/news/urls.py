@@ -7,6 +7,6 @@ from news.views import get_news_by_role, get_news
 urlpatterns = [
     # path('docs/'),
 
-    path('news/', get_news, name='news'),
-    path('news/<str:role>/', get_news_by_role, name='news_by_role')
+    path(r'news/', get_news, name='news'),
+    path(r'news/<str:role>/', get_news_by_role, name='news_by_role')
 ]
