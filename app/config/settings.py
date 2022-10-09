@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     'news.apps.NewsConfig',
     'api.apps.ApiConfig',
 
-    'rest_framework'
+    'rest_framework',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
